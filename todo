@@ -1,0 +1,45 @@
+Estrutura: 
+
+/meu-app
+    /app
+        /controllers
+            controller.js
+        /views
+            home.html
+            sobre.html
+        app.js
+        routes.js
+    /assets
+        style.css
+    index.html
+    node_modules/
+        (bibliotecas do AngularJS e Angular Route)
+
+só dar npm install
+npm install angular angular-route
+
+
+
+Como funciona a estrutura?
+index.html:
+Define a estrutura básica da página e inclui os arquivos JavaScript necessários para o funcionamento do AngularJS e do roteamento.
+
+O ng-view é o local onde o conteúdo das rotas será carregado.
+
+app.js:
+Cria o módulo da aplicação meuApp e define o módulo Angular.
+
+routes.js:
+Configura as rotas da aplicação. Aqui, estamos usando o ngRoute para mapear as URLs /home e /sobre para as views home.html e sobre.html, respectivamente.
+
+controller.js:
+Define os controladores HomeController e SobreController. Esses controladores são responsáveis por fornecer as mensagens que serão exibidas nas páginas.
+
+home.html e sobre.html:
+São as views correspondentes às rotas /home e /sobre, e exibem as mensagens que os controladores passam para elas.
+
+style.css:
+Contém estilos básicos para o layout da aplicação. Estilo a navegação, as fontes e o design básico da página.
+
+
+

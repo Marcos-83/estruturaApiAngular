@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="exApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Aplicação Angular</title>
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Estilo CSS -->
+    <script src="node_modules/angular/angular.js"></script> <!-- AngularJS -->
+    <script src="node_modules/angular-route/angular-route.js"></script> <!-- Angular Route -->
+    <script src="app/app.js"></script> <!-- Módulo principal -->
+    <script src="app/routes.js"></script> <!-- Configuração de rotas -->
+    <script src="app/controllers/controller.js"></script> <!-- Controladores -->
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#/home">Home</a></li>
+                <li><a href="#/sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div ng-view></div> <!-- Aqui o conteúdo das rotas será carregado -->
+    </main>
+</body>
+</html>
+
+
+
